@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: rgb(0, 0, 27); 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	color: rgb(0, 0, 0) !important;
+}
+
+#ASCIIValueTeller
+{
+	padding-top: 70px;
+}
+#ASCIIValueTellerTitle
+{
+	font-size: 30px;
+}
+#ASCIIValue
+{
+	padding-top: 15px;
+	font-size:22px;
+}
+#RaceWinner
+{
+	font-size: 21px;
+	color: rgb(0, 0, 99);
+}
+#RaceButton
+{
+	width: 250px;
+	height: 50px;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Racing Cars</title>
+</head>
+<body onload="add();">
+<center>
+<h1>Game:</h1>
+<canvas id="myCanvas" width="800" height="600">
+</canvas>
+<p>Controls: Blue car: Arrow Keys
+	Red Car: W A S D.	
+	Press R to race the cars or tap the button below to start it. :D.
+</p>
+<button id="RaceButton" onclick="RaceCars()">Start The Race</button>
+<p id="RaceWinner">The winner of the race is</p>
+<br>
+<h4>
+	<b class="text-danger">NOTE : </b> IF CARS IS NOT VISIBLE PRESS ANY ARROW KEY
+</h4>
+
+<section id="ASCIIValueTeller">
+	<p id="ASCIIValueTellerTitle">ASCII value teller</p> 
+	because i keep forgetting the values.
+	<p id="ASCIIValue">The value of the key is </p>
+</section>
+
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
